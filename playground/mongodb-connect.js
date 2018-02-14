@@ -1,9 +1,8 @@
 // const MongoClient = require('mongodb').MongoClient;
 const {MongoClient, ObjectID} = require('mongodb');
 
-
 MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
-  if(err){
+  if (err) {
     return console.log('Unable to connect to MongoDB server');
   }
   console.log('Connected to MongoDB server');
@@ -12,22 +11,23 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   //   text: 'Something to do',
   //   completed: false
   // }, (err, result) => {
-  //   if(err){
+  //   if (err) {
   //     return console.log('Unable to insert todo', err);
   //   }
   //
   //   console.log(JSON.stringify(result.ops, undefined, 2));
   // });
 
-  //Insert new doc into Users (name, age, location)
+  // Insert new doc into Users (name, age, location)
   // db.collection('Users').insertOne({
-  //   name: 'Freud',
-  //   age: 36,
-  //   location: 'Montreal'
+  //   name: 'Andrew',
+  //   age: 25,
+  //   location: 'Philadelphia'
   // }, (err, result) => {
-  //   if(err){
-  //     return console.log('unable to insert user', err);
+  //   if (err) {
+  //     return console.log('Unable to insert user', err);
   //   }
+  //
   //   console.log(result.ops[0]._id.getTimestamp());
   // });
 

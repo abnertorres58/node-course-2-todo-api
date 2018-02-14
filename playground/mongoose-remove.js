@@ -8,13 +8,13 @@ const {User} = require('./../server/models/user');
 //   console.log(result);
 // });
 
-//Todo.findOneAndRemove
-//Todo.findByIdAndRemove
+// Todo.findOneAndRemove
+// Todo.findByIdAndRemove
 
-// Todo.findOneAndRemove({_id: '5a7de3f5e74ea2db09949c08'}).then((todo) => {
-//   console.log(todo);
+// Todo.findOneAndRemove({_id: '57c4610dbb35fcbf6fda1154'}).then((todo) => {
+//
 // });
 
-Todo.findByIdAndRemove('5a7de3f5e74ea2db09949c08').then((todo) => {
+Todo.findByIdAndRemove('57c4610dbb35fcbf6fda1154').then((todo) => {
   console.log(todo);
 });

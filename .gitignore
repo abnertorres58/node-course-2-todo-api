@@ -1,3 +1,4 @@
 node_modules/
 package-lock.json
 playground/data-destructuring.js
+server/config/config.json
